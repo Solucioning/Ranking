@@ -23,9 +23,9 @@ try:
             st.warning("No se han encontrado datos para este ID.")
         else:
             columnas_mostrar = [
-                "SEMANA", "ORDENES", "EFICIENCIA", "CDT", "SPEED",
-                "CAPU", "NO SHOW", "REASSIGNAMENT",
-                "RANKING_GRUPO_HORAS", "SCORE_NORMALIZADO", "INCENTIVO_PROPORCIONAL"
+                "SEMANA","VEHICULO", "ORDENES", "EFICIENCIA", "CDT", "VELOCIDAD",
+                "CAPU", "NO PRESENTADO", "REASIGNACIONES",
+                "HORAS TRABAJADAS", "RANKING", "TOTAL INCENTIVOS"
             ]
             columnas_presentes = [col for col in columnas_mostrar if col in resultados.columns]
             st.success("Resultados encontrados:")
